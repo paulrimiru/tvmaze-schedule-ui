@@ -7,44 +7,66 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: #000;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 .grey-divider {
-  width: 29.2rem;
+  width: 2.2rem;
   height: 1px;
   background-color: #707070;
 }
 
 .schedule-container {
   display: grid;
-  grid: auto/ repeat(5, 340px);
+  grid: 610px / repeat(4, 420px);
   padding: 0;
   margin: 0;
 }
 
-.trainers-portfolio-info h3 {
+.schedules-portfolio-info h3 {
   margin: 0px;
-  font-size: 2.0rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #F92524;
 }
 
-.trainers-portfolio-info h5 {
+.schedules-portfolio-info h5 {
   margin: 8px 0px;
   font-size: 1.5rem;
   font-weight: 200;
 }
 
-.trainers-portfolio-info p {
+.schedules-portfolio-info p {
   text-align: start;
   font-size: 1.2rem;
   font-weight: 200;
 }
 
-.trainers-portfolio-info {
+.schedules-portfolio-info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 24px;
+  height: 610px;
+}
+
+#show-details {
+  background-color: #000;
+  opacity: 0.8;
+  display: none;
+  height: 100%;
+  width: 390px;
+  padding: 16px;
+}
+
+.schedules-portfolio-info:hover #show-details {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  color:#fff;
+  justify-content: center;
 }
