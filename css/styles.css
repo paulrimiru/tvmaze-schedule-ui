@@ -1,0 +1,50 @@
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grey-divider {
+  width: 29.2rem;
+  height: 1px;
+  background-color: #707070;
+}
+
+.schedule-container {
+  display: grid;
+  grid: auto/ repeat(5, 340px);
+  padding: 0;
+  margin: 0;
+}
+
+.trainers-portfolio-info h3 {
+  margin: 0px;
+  font-size: 2.0rem;
+  font-weight: 500;
+  color: #F92524;
+}
+
+.trainers-portfolio-info h5 {
+  margin: 8px 0px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.trainers-portfolio-info p {
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.trainers-portfolio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 24px;
+}
