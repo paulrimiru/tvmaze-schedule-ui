@@ -1,5 +1,3 @@
-import apiKey from './keys.js';
-
 function fetchMovies() {
   fetch("https://tvjan-tvmaze-v1.p.rapidapi.com/schedule?filter=primetime", {
     "method": "GET",
@@ -14,7 +12,6 @@ function fetchMovies() {
   .then(data => {
     let schedules = '';
     data.forEach(show => {
-      console.log(show)
       const defaultImage = "https://res.cloudinary.com/mikekrantz/image/upload/v1555356246/lloyd-dirks-74271-unsplash.jpg";
       const backgroundImage = `background-image: url(${show.image ? show.image.original : show.show.image.original ? show.show.image.original : defaultImage }); background-size: cover;`
       schedules += `
